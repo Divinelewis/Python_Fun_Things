@@ -8,8 +8,15 @@ print(""" WELCOME TO THE FAST NUMBER GAME,
           AND ADDED TO YOUR INITIAL NUMBER REPRESENTING THE PLAYER HEALTH
           WHICH EVER PLAYER'S HEALTH IS THE FIRST TO INCREMENT TO 150+ WINS""")
 
-player1 = input("Player 1, Please enter your name: ")
+player1 = input("Player 2, Please enter your name: ")
 player2 = input("Player 2, Please enter your name: ")
+
+# This is the checker part of the game, it compares the two score rates when called upon
+def checker(player1_Health, player2_Health):
+    if player1_Health > player2_Health:
+        print("{} has won the set target of 150+ with a point of {}".format(player1, player1_Health))
+    else:
+        print("{} has won the set target of 150+ with a point of {}".format(player2, player2_Health))
 
 # The first (two) while loops run to check the entry made by the user
 # If a user enters a number greater than 10 it raises a value error
@@ -44,10 +51,7 @@ while True:
 while True:
     if player1_Health and player2_Health >= 150:
         print("Game Over!!!")
-        if player1_Health > player2_Health:
-            print("{} has won the set target of 150+ with a point of {}".format(player1, player1_Health))
-        else:
-            print("{} has won the set target of 150+ with a point of {}".format(player2, player2_Health))
+        checker(player1_Health, player2_Health)
         break
     
     elif player1_Health and player2_Health > 0:
