@@ -39,19 +39,19 @@ print("Guess the animal\n")
 
 guess1 = input('1. Which bear lives at the north pole\n \
 (A) Polar bear\n (B) Crocodile\n (C) Shark\n \
-Type A, B, C, or D\n')
+Type A, B, or C\n')
 check_guess(guess1, 'A')
 
 print("\n")
 guess2 = input('2. Which is the fastest land animal?\n \
 (A) Lion\n (B) Tiger\n (C) Cheetah\n \
-Type A, B, C, or D\n')
+Type A, B, or C\n')
 check_guess(guess2, 'c')
 
 print("\n")
 guess3 = input('Which is the largest animal?\n \
 (A) Blue whale\n (B) shark\n (C) Elephant\n \
-Type A, B, C, or D\n')
+Type A, B, or C\n')
 check_guess(guess3, 'a')
 
 #prints the final score of the player
